@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+$defaultFont: 'Raleway', sans-serif;
+$backgroundColor: #1b1523;
+$fontColor: #efefef;
+$BlackColor: #222;
+$FontSizeMobile: 0.75rem; //12px
+$FontSizeDesktop: 1rem; //16px
+$TitleSizeMobile: 0.875rem; //14px
+$TitleSizeDesktop: 1.125rem; //18px
+
+@mixin Settings {
+  border: 6px;
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 0.3rem;
+  border-radius: 10px;
+  background: #ffffff40;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  @media (min-width: 768px) {
+    gap: 1rem;
+  }
+}

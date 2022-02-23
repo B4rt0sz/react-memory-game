@@ -1,0 +1,19 @@
+body {
+  font-family: $defaultFont;
+  background-color: $backgroundColor;
+  color: $fontColor;
+}
+
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+
+  &__container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+  }
+}

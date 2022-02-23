@@ -1,0 +1,58 @@
+.gameSettings {
+  font-weight: 500;
+  padding: 1rem;
+  background: #ffffff40;
+  border: 1px solid #ffffff2e;
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  box-shadow: 0 8px 32px 0 #1f26875e;
+
+  &__bigTitle {
+    text-align: center;
+    font-size: $TitleSizeMobile;
+
+    @media (min-width: 768px) {
+      font-size: $TitleSizeDesktop;
+    }
+  }
+
+  &__smallTitle {
+    margin: 0.5rem;
+    font-size: $FontSizeMobile;
+
+    @media (min-width: 768px) {
+      font-size: $FontSizeDesktop;
+    }
+  }
+
+  &__settingsCounter {
+    @include Settings;
+    padding: 0.5rem;
+  }
+
+  &__settingsPace {
+    @include Settings;
+  }
+
+  &__button {
+    display: flex;
+    margin: 1rem auto 0 auto;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: $defaultFont;
+    color: $BlackColor;
+    border: transparent;
+    border-radius: 10px;
+    background: #ffffff40;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 8px 24px 0 rgba(0, 1, 10, 0.371);
+    }
+  }
+}

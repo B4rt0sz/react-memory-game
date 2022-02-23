@@ -1,0 +1,51 @@
+.gamePace {
+  label {
+    display: block;
+    position: relative;
+    padding-left: 1.2rem;
+    color: $BlackColor;
+    font-size: $FontSizeMobile;
+    font-weight: 500;
+    cursor: pointer;
+
+    @media (min-width: 768px) {
+      font-size: $FontSizeDesktop;
+    }
+
+    input[type='radio'] {
+      display: none;
+    }
+
+    .customDot {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      height: 14px;
+      width: 14px;
+      border-radius: 50%;
+      background-color: #ffffff40;
+      border: 2px solid #ffffff80;
+    }
+
+    .customDot:after {
+      content: '';
+      position: absolute;
+      display: none;
+    }
+
+    input:checked ~ .customDot:after {
+      display: block;
+    }
+
+    & .customDot:after {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: #ffffffb3;
+    }
+  }
+}

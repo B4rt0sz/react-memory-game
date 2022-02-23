@@ -1,0 +1,55 @@
+.cardCounter {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+
+  &__quantity {
+    font-weight: 600;
+    color: $BlackColor;
+    font-size: $FontSizeMobile;
+    padding: 0 10px;
+
+    @media (min-width: 768px) {
+      font-size: $FontSizeDesktop;
+    }
+  }
+
+  &__plus,
+  &__minus {
+    width: 26px;
+    height: 26px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: $defaultFont;
+    color: $BlackColor;
+    border-radius: 50%;
+    background-color: #ffffff40;
+    border: 2px solid #ffffff80;
+    cursor: pointer;
+  }
+
+  &__plus:before,
+  &__plus:after,
+  &__minus:before,
+  &__minus:after {
+    content: '';
+    width: 14px;
+    height: 2px;
+    border-radius: 1px;
+    margin: -1px 0 0 -7px;
+    transform: scale(0.7);
+  }
+
+  &__plus:active,
+  &__minus:active {
+    --scale: 0.92;
+  }
+
+  &__plus,
+  &__minus {
+    transform: scale(var(--scale));
+  }
+}
