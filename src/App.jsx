@@ -2,17 +2,19 @@ import { useState } from 'react'
 
 import GameTitle from './components/GameTitle/GameTitle'
 import GameSettings from './components/GameSettings/GameSettings'
+import useGetImages from './components/hooks/useGetImages'
 
 import './styles/index.scss'
 
 function App() {
-  const [gameOptions, setGameOptions] = useState([])
+  const [gameOptions, setGameOptions] = useState(null)
+  const gameCards = useGetImages(gameOptions)
+
+  console.log({ gameCards })
 
   const startGame = (options) => {
     setGameOptions(options)
   }
-
-  console.log(gameOptions)
 
   return (
     <div className='wrapper'>
