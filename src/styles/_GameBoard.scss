@@ -1,11 +1,10 @@
 .gameBoard {
   margin-top: 1.5rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 5px;
 
   @media (min-width: 568px) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
   }
 

@@ -48,11 +48,14 @@ const useGetImages = (gameOptions) => {
       }
       return card
     })
-    setTimeout(() => {
-      setGameCards(shuffleCards)
-      setSelectedCards([])
-      if (matched) updateScore()
-    }, PACES[gameOptions.pace])
+    setTimeout(
+      () => {
+        setGameCards(shuffleCards)
+        setSelectedCards([])
+        if (matched) updateScore()
+      },
+      matched ? 100 : PACES[gameOptions.pace]
+    )
   }
 
   const shuffleArray = (array) => {
