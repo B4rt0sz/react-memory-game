@@ -1,0 +1,43 @@
+.gameResult {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 500;
+  margin: 0.5rem;
+  padding: 2rem;
+  background: #ffffff40;
+  border: 1px solid #ffffff2e;
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  box-shadow: 0 8px 32px 0 #1f26875e;
+
+  font-size: $FontSizeDesktop;
+
+  @media (min-width: 768px) {
+    font-size: $TitleSizeDesktop;
+  }
+
+  &__button {
+    display: flex;
+    margin: 1rem auto 0 auto;
+    padding: 0.5rem 1rem;
+    font-size: $FontSizeDesktop;
+    font-weight: 500;
+    font-family: $defaultFont;
+    color: $BlackColor;
+    border: transparent;
+    border-radius: 10px;
+    background: #ffffff40;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 8px 24px 0 rgba(0, 1, 10, 0.371);
+    }
+  }
+}

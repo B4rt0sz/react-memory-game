@@ -1,6 +1,10 @@
 # :game_die: Memory Game
 
-Test your memory with this memory game. This is an application written with React.
+:scroll: Test your memory with this memory game. This is an application written with React.
+
+## Live demo
+
+:computer: [Memory Game](https://pokemon-mcg.netlify.app/)
 
 ## Installation
 
@@ -11,6 +15,14 @@ git clone https://github.com/B4rt0sz/react-memory-game.git
 cd react-memory-game
 npm install
 ```
+
+## For the project I used:
+
+- JavaScript
+- ReactJS
+- HTML
+- CSS/SCSS
+- Webpack
 
 ## License
 

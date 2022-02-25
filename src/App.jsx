@@ -13,6 +13,10 @@ function App() {
     setGameOptions(options)
   }
 
+  const restartGame = () => {
+    setGameOptions(null)
+  }
+
   return (
     <div className='wrapper'>
       <div className='wrapper__container'>
@@ -20,7 +24,7 @@ function App() {
         {!gameOptions ? (
           <GameSettings startGame={startGame} />
         ) : (
-          <GameBoard gameOptions={gameOptions} />
+          <GameBoard gameOptions={gameOptions} restartGame={restartGame} />
         )}
       </div>
     </div>

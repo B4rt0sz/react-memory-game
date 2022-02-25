@@ -1,8 +1,11 @@
-const GameResult = () => {
+const GameResult = ({ restartGame }) => {
   return (
-    <>
-      <h1 className='gameResult'>Game Result</h1>
-    </>
+    <div className='gameResult'>
+      <p>You won!</p>
+      <button className='gameResult__button' onClick={restartGame}>
+        New Game
+      </button>
+    </div>
   )
 }
 

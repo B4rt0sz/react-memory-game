@@ -4,7 +4,7 @@ import useGetCards from '../hooks/useGetCards'
 import GameCard from '../GameCard/GameCard'
 import GameResult from '../GameResult/GameResult'
 
-const GameBoard = ({ gameOptions }) => {
+const GameBoard = ({ gameOptions, restartGame }) => {
   const [isLoading, setIsLoading] = useState(true)
   const { gameCards, handleChoice, win } = useGetCards(gameOptions)
 
@@ -14,7 +14,7 @@ const GameBoard = ({ gameOptions }) => {
 
   return (
     <>
-      {win && <GameResult />}
+      {win && <GameResult restartGame={restartGame} />}
       {isLoading ? (
         <Watch height='100' width='100' color='#ffffff40' ariaLabel='loading' />
       ) : (

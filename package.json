@@ -1,6 +1,6 @@
 {
   "name": "react-memory-game",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Test your memory with this memory game. This is an application written with React.",
   "author": "Bartosz Szućko",
   "license": "MIT",
